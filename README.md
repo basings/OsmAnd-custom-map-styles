@@ -26,8 +26,6 @@ The map styles (or rendering styles) are Extensible Markup Language (.xml) files
 
 ![test](unimap-v1.jpg)
 
-<img src="unimap-v1.jpg" alt="UniMap" title="UniMap" height="200"/>
-
 ## How to contribute
 
 Contributions are very welcome. You can either submit your own custom map style or improve an existing map style and create a pull request (PR). 
