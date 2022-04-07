@@ -24,7 +24,7 @@ The map styles (or rendering styles) are Extensible Markup Language (.xml) files
 - Mode: all-rounder. It can be used for any mode (car, bike, foot, ...).
 - notes: currently not optimized for Night mode
 
-![UniMap]()
+![UniMap](https://raw.githubusercontent.com/basings/OsmAnd-custom-map-styles/main/unimap-v1.jpg)
 
 ## How to contribute
 
