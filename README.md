@@ -18,11 +18,10 @@ The map styles (or rendering styles) are Extensible Markup Language (.xml) files
 
 ### UniMap
 
-- filename: unimap-vx.render.xml
-- forked from: UniRS.render.xml
+- filename: unimap.render.xml
+- forked from: OsmAnd (default.render.xml)
 - Description: Beautiful map colors without pop and too many colors. 
 - Mode: all-rounder. It can be used for any mode (car, bike, foot, ...).
-- notes: currently not optimized for Night mode
 
 ![test](unimap-v1.jpg)
 
