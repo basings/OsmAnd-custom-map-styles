@@ -24,7 +24,7 @@ The map styles (or rendering styles) are Extensible Markup Language (.xml) files
 - Mode: all-rounder. It can be used for any mode (car, bike, foot, ...).
 - Notes: random house numbers at zoom level 16&17 are a thing from the past. House numbers start at zoom level 18.
 
-![test](unimap-v1.jpg)
+![test](screenshots/UniMap.jpg)
 
 ## How to contribute
 
