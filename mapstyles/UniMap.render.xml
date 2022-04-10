@@ -12226,7 +12226,7 @@
 		</switch>
 		<case minzoom="18" tag="attraction" value="log_flume" strokeWidth="0.1"/>
 
-		<case minzoom="8" tag="route" value="ferry" color="$routeFerryColor" strokeWidth="1:1" pathEffect="6_3">
+		<case minzoom="11" tag="route" value="ferry" color="$routeFerryColor" strokeWidth="1:1" pathEffect="6_3">
 			<apply_if minzoom="16"> <!-- for new OpenGL engine only -->
 				<apply_if additional="oneway=yes" pathIcon="oneway_blue" pathIconStep="70"/>
 				<apply_if additional="oneway=-1" pathIcon="oneway_reverse_blue" pathIconStep="70"/>
