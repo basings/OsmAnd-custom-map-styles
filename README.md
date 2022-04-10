@@ -22,7 +22,7 @@ The map styles (or rendering styles) are Extensible Markup Language (.xml) files
 - forked from: OsmAnd (default.render.xml)
 - Description: Beautiful map colors without pop and too many colors. 
 - Mode: all-rounder. It can be used for any mode (car, bike, foot, ...).
-- Notes: random house numbers at zoom level 16&17 are a thing from the past. House numbers start at zoom level 18.
+- Notes: random house numbers at zoom level 16&17 are a thing from the past. House numbers start at zoom level 18. Ferry routes appear only on higher zoom levels. Churches are only as important as other POIs.
 
 ![test](screenshots/UniMap.jpg)
 
