@@ -119,15 +119,15 @@
 	<renderingProperty attr="depthContours" name="Depth contours" description="Show depth contours and points"
 		type="boolean" possibleValues="" category="details"/>
 
-  <renderingProperty attr="weatherTempContours" name="Temperature isolines" description="Show temperature isolines"
-      type="boolean" possibleValues="" category="details"/>
-  <renderingProperty attr="weatherPressureContours" name="Pressure isolines" description="Show pressure isolines"
-      type="boolean" possibleValues="" category="details"/>
+    <renderingProperty attr="weatherTempContours" name="Temperature isolines" description="Show temperature isolines"
+        type="boolean" possibleValues="" category="details"/>
+    <renderingProperty attr="weatherPressureContours" name="Pressure isolines" description="Show pressure isolines"
+        type="boolean" possibleValues="" category="details"/>
 
 	<renderingProperty attr="natureReserves" name="Nature reserves" description="Show nature reserve, protected areas and national parks"
 		type="boolean" possibleValues="" category="details"/>
-  <renderingProperty attr="horseScale" name="Difficulty of horse trails" description="Render paths according to difficulty of horse trails"
-	type="boolean" possibleValues="" category="details"/>
+    <renderingProperty attr="horseScale" name="Difficulty of horse trails" description="Render paths according to difficulty of horse trails"
+		type="boolean" possibleValues="" category="details"/>
 
 	<renderingProperty attr="noAdminboundaries" name="Hide boundaries" description="Suppress display of admin levels 5-9"
 		type="boolean" possibleValues="" category="hide"/>
@@ -187,26 +187,26 @@
 	-->
 	<renderingProperty attr="engine_v1" type="boolean"/>
 
-  <renderingAttribute name="weatherContourLevels">
-      <case minzoom="4" maxzoom="5" additional="weatherType=temp_C" attrStringValue="-70,-60,-50,-40,-30,-20,-10,0,10,20,30,40,50,60"/>
-      <case minzoom="6" maxzoom="9" additional="weatherType=temp_C" attrStringValue="-70,-65,-60,-55,-50,-45,-40,-35,-30,-25,-20,-15,-10,-5,0,5,10,15,20,25,30,35,40,45,50,55,60"/>
-      <case minzoom="10" additional="weatherType=temp_C" attrStringValue="-70,-68,-66,-64,-62,-60,-58,-56,-54,-52,-50,-48,-46,-44,-42,-40,-38,-36,-34,-32,-30,-28,-26,-24,-22,-20,-18,-16,-14,-12,-10,-8,-6,-4,-2,0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,56,58,60"/>
-      <case minzoom="4" maxzoom="6" additional="weatherType=temp_F" attrStringValue="-30,-20,-10,0,10,20,30,40,50,60,70,80,90,100,110,120"/>
-      <case minzoom="7" maxzoom="9" additional="weatherType=temp_F" attrStringValue="-30,-25,-20,-15,-10,-5,0,5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100,105,110,115,120"/>
-      <case minzoom="10" additional="weatherType=temp_F" attrStringValue="-30,-28,-26,-24,-22,-20,-18,-16,-14,-12,-10,-8,-6,-4,-2,0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,56,58,60,62,64,66,68,70,72,74,76,78,80,82,84,86,88,90,92,94,96,98,100,102,104,106,108,110,112,114,116,118,120"/>
-      <case minzoom="4" additional="weatherType=pressure_hPa" attrStringValue="850,875,900,925,950,975,1000,1010,1020,1030,1040,1050,1075,1100,1125,1150,1175,1200"/>
-      <case minzoom="4" additional="weatherType=pressure_mmHg" attrStringValue="700,705,710,715,720,725,730,735,740,745,750,755,760,765,770,775,780,785,790,795,800"/>
-      <case minzoom="4" additional="weatherType=pressure_inHg" attrStringValue="28.0,28.25,28.5,28.75,29.0,29.25,29.5,29.75,30.0,30.25,30.5,30.75,31.0,31.25,31.5,31.75,32.0"/>
-  </renderingAttribute>
+    <renderingAttribute name="weatherContourLevels">
+        <case minzoom="4" maxzoom="5" additional="weatherType=temp_C" attrStringValue="-70,-60,-50,-40,-30,-20,-10,0,10,20,30,40,50,60"/>
+        <case minzoom="6" maxzoom="9" additional="weatherType=temp_C" attrStringValue="-70,-65,-60,-55,-50,-45,-40,-35,-30,-25,-20,-15,-10,-5,0,5,10,15,20,25,30,35,40,45,50,55,60"/>
+        <case minzoom="10" additional="weatherType=temp_C" attrStringValue="-70,-68,-66,-64,-62,-60,-58,-56,-54,-52,-50,-48,-46,-44,-42,-40,-38,-36,-34,-32,-30,-28,-26,-24,-22,-20,-18,-16,-14,-12,-10,-8,-6,-4,-2,0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,56,58,60"/>
+        <case minzoom="4" maxzoom="6" additional="weatherType=temp_F" attrStringValue="-30,-20,-10,0,10,20,30,40,50,60,70,80,90,100,110,120"/>
+        <case minzoom="7" maxzoom="9" additional="weatherType=temp_F" attrStringValue="-30,-25,-20,-15,-10,-5,0,5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100,105,110,115,120"/>
+        <case minzoom="10" additional="weatherType=temp_F" attrStringValue="-30,-28,-26,-24,-22,-20,-18,-16,-14,-12,-10,-8,-6,-4,-2,0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,56,58,60,62,64,66,68,70,72,74,76,78,80,82,84,86,88,90,92,94,96,98,100,102,104,106,108,110,112,114,116,118,120"/>
+        <case minzoom="4" additional="weatherType=pressure_hPa" attrStringValue="850,875,900,925,950,975,1000,1010,1020,1030,1040,1050,1075,1100,1125,1150,1175,1200"/>
+        <case minzoom="4" additional="weatherType=pressure_mmHg" attrStringValue="700,705,710,715,720,725,730,735,740,745,750,755,760,765,770,775,780,785,790,795,800"/>
+        <case minzoom="4" additional="weatherType=pressure_inHg" attrStringValue="28.0,28.25,28.5,28.75,29.0,29.25,29.5,29.75,30.0,30.25,30.5,30.75,31.0,31.25,31.5,31.75,32.0"/>
+    </renderingAttribute>
 
-  <renderingAttribute name="weatherContourTypes">
-      <!-- Isoline type will be converted to tag/value like contourtype=5C or contourtype=950hPa -->
-      <case minzoom="4" additional="weatherType=temp_C" attrStringValue="-30,-20,-10,-5,0,5,10,20,30"/>
-      <case minzoom="4" additional="weatherType=temp_F" attrStringValue="-30,-10,10,30,50,80,100,120"/>
-      <case minzoom="4" additional="weatherType=pressure_hPa" attrStringValue="900,950,1000,1100"/>
-      <case minzoom="4" additional="weatherType=pressure_mmHg" attrStringValue="730,740,750,760,770,780"/>
-      <case minzoom="4" additional="weatherType=pressure_inHg" attrStringValue="29.0,29.5,30.0,30.5,31.0"/>
-  </renderingAttribute>
+    <renderingAttribute name="weatherContourTypes">
+        <!-- Isoline type will be converted to tag/value like contourtype=5C or contourtype=950hPa -->
+        <case minzoom="4" additional="weatherType=temp_C" attrStringValue="-30,-20,-10,-5,0,5,10,20,30"/>
+        <case minzoom="4" additional="weatherType=temp_F" attrStringValue="-30,-10,10,30,50,80,100,120"/>
+        <case minzoom="4" additional="weatherType=pressure_hPa" attrStringValue="900,950,1000,1100"/>
+        <case minzoom="4" additional="weatherType=pressure_mmHg" attrStringValue="730,740,750,760,770,780"/>
+        <case minzoom="4" additional="weatherType=pressure_inHg" attrStringValue="29.0,29.5,30.0,30.5,31.0"/>
+    </renderingAttribute>
 
 	<renderingAttribute name="defaultColor">
 		<!-- next line should should make background transparent for underlays to be visible, but this curretnly does not work as desired -->
@@ -1789,8 +1789,8 @@
 	<renderingConstant name="shaderColorNight" value="#1b3638"/>
 	<renderingConstant name="wetlandColorNight" value="#1b3238"/>
 	<renderingAttribute name="grasslandColor">
-		<case moreDetailed="true" attrColorValue="#C5E3A5"/>
-		<case attrColorValue="#C5E3A5"/>
+		<case moreDetailed="true" attrColorValue="#CCE7B4"/>
+		<case attrColorValue="#CCE7B4"/>
 	</renderingAttribute>
 	<renderingAttribute name="lavaColor">
 		<case nightMode="true" attrColorValue="$openNatureColorNight"/>
@@ -1823,8 +1823,8 @@
 		<case attrColorValue="$defaultColor"/>
 	</renderingAttribute>
 	<renderingAttribute name="grassColor">
-		<case moreDetailed="true" attrColorValue="#C5E3A5"/>
-		<case attrColorValue="#C5E3A5"/>
+		<case moreDetailed="true" attrColorValue="#CCE7B4"/>
+		<case attrColorValue="#CCE7B4"/>
 	</renderingAttribute>
 	<renderingAttribute name="greeneryColor">
 		<case moreDetailed="true" attrColorValue="#D7F1C6"/>
@@ -1848,9 +1848,9 @@
 	</renderingAttribute>
 	<renderingAttribute name="parkColor">
 		<case nightMode="true" attrColorValue="$woodColor"/>
-		<case moreDetailed="true" attrColorValue="#AFD885"/>
+		<case moreDetailed="true" attrColorValue="#ADE5A1"/>
 		<case nightMode="true" attrColorValue="#e000171d"/>
-		<case attrColorValue="#AFD885"/>
+		<case attrColorValue="#3515ff00"/>
 	</renderingAttribute>
 	<renderingAttribute name="parkStrokeColor">
 		<case nightMode="true" attrColorValue="#4D070d0b"/>
@@ -1899,7 +1899,7 @@
 
 	<renderingAttribute name="stadiumColor">
 		<case nightMode="true" attrColorValue="#04382c"/>
-		<case moreDetailed="true" attrColorValue="#8DE9A1"/>
+		<case moreDetailed="true" attrColorValue="#defaultColor"/>
 		<case attrColorValue="$defaultColor"/>
 	</renderingAttribute>
 	<renderingAttribute name="stadiumStrokeColor">
@@ -1907,8 +1907,8 @@
 	</renderingAttribute>
 	<renderingAttribute name="sportsCentreColor">
 		<case nightMode="true" attrColorValue="#04382c"/>
-		<case moreDetailed="true" attrColorValue="#8DE9A1"/>
-		<case attrColorValue="$defaultColor"/>
+		<case moreDetailed="true" attrColorValue="#CCB297"/>
+		<case attrColorValue="#CCB297"/>
 	</renderingAttribute>
 	<renderingAttribute name="sportsCentreStrokeColor">
 		<case attrColorValue="#888888"/>
@@ -1918,7 +1918,6 @@
 		<case moreDetailed="true" attrColorValue="#c0e5a1"/>
 		<case attrColorValue="$woodColor"/>
 	</renderingAttribute>
-
 	<renderingAttribute name="gardenColor">
 		<case nightMode="true" attrColorValue="#004333"/>
 		<case moreDetailed="true" attrColorValue="#c0e5a1"/>
@@ -2057,7 +2056,7 @@
 	</renderingAttribute>
 	<renderingAttribute name="landuseIndustrialColor">
 		<case nightMode="true" attrColorValue="#101e21"/>
-		<case attrColorValue="#EFC8E9"/>
+		<case attrColorValue="#cfc0c8"/>
 	</renderingAttribute>
 	<renderingAttribute name="portColor">
 		<case nightMode="true" attrColorValue="#44101e21"/>
@@ -2065,15 +2064,13 @@
 	</renderingAttribute>
 	<renderingAttribute name="landuseResidentialColor">
 		<case nightMode="true" attrColorValue="$null"/>
-		<!-- <case moreDetailed="true" attrColorValue="#E3DEDB"/> -->
-		<case moreDetailed="true" attrColorValue="#DCDCDC"/>
-		<!-- <case attrColorValue="#E3DEDB"/> -->
-		<case attrColorValue="#DCDCDC"/>
+		<case moreDetailed="true" attrColorValue="#E3DEDB"/>
+		<case attrColorValue="#E3DEDB"/>
 	</renderingAttribute>
 	<renderingAttribute name="landuseResidentialRuralColor">
 		<case nightMode="true" attrColorValue="$null"/>
-		<case moreDetailed="true" attrColorValue="#DCDCDC"/>
-		<case attrColorValue="#DCDCDC"/>
+		<case moreDetailed="true" attrColorValue="#E3DEDB"/>
+		<case attrColorValue="#E3DEDB"/>
 	</renderingAttribute>
 	<renderingAttribute name="landuseResidentialNamedStrokeColor">
 		<case nightMode="true" attrColorValue="#444444"/>
@@ -2673,8 +2670,8 @@
 	<renderingConstant name="naturalPeakIconMinZoom" value="11"/>
 	<renderingConstant name="naturalVolcanoIconMinZoom" value="10"/>
 	<renderingConstant name="naturalHillIconMinZoom" value="14"/>
-	<renderingConstant name="campSiteIconMinZoom" value="14"/>
-	<renderingConstant name="caravanSiteIconMinZoom" value="14"/>
+	<renderingConstant name="campSiteIconMinZoom" value="15"/>
+	<renderingConstant name="caravanSiteIconMinZoom" value="15"/>
 	<renderingConstant name="picnicSiteIconMinZoom" value="15"/>
 	<renderingConstant name="chaletIconMinZoom" value="16"/>
 	<renderingConstant name="alpineHutIconMinZoom" value="14"/>
@@ -2727,7 +2724,7 @@
 	<renderingConstant name="greenhouseHorticultureMinZoon" value="12"/>
 	<renderingConstant name="sandMinZoom" value="5"/>
 
-	<renderingConstant name="farmlandMinZoom" value="11"/>
+	<renderingConstant name="farmlandMinZoom" value="8"/>
 	<renderingConstant name="farmyardMinZoom" value="11"/>
 	<renderingConstant name="meadowMinZoom" value="12"/>
 	<renderingConstant name="landuseIndustrialMinZoom" value="11"/>
@@ -8091,7 +8088,7 @@
 				<case minzoom="16" tag="amenity" value="hunting_stand" icon="amenity_hunting_stand" shield="hunting_stand_shield"/>
 				<case minzoom="17" tag="amenity" value="feeding_place" icon="feeding_place" shield="feeding_place_shield"/>
 				<switch tag="amenity" value="place_of_worship" icon="amenity_place_of_worship" iconVisibleSize="11" intersectionSizeFactor="0.8">
-					<!-- <case minzoom="14" moreDetailed="true" iconOrder="43" iconVisibleSize="9" intersectionSizeFactor="0.7"/> issue #2-->
+					<case minzoom="14" moreDetailed="true" iconOrder="43" iconVisibleSize="9" intersectionSizeFactor="0.7"/>
 					<case minzoom="15" moreDetailed="false" additional="wiki=yes" iconOrder="43" iconVisibleSize="9" intersectionSizeFactor="0.7"/>
 					<case minzoom="16" iconOrder="132"/>
 					<apply>
@@ -9268,7 +9265,7 @@
 					<case tag="building" value="university"/>
 					<case tag="building" value="college"/>
 					<case tag="building" value="stadium"/>
-					<case tag="building" value="sports_centre"/>
+					<!-- <case tag="building" value="sports_centre"/> -->
 					<apply color="$buildingEducationalColor"/>
 				</switch>
 				<switch>
@@ -9281,7 +9278,7 @@
 					<case tag="building" value="basilica"/>
 					<case tag="building" value="castle_tower"/>
 					<case tag="historic" value="city_gate"/>
-					<apply strokeWidth_2="$attractionStrokeWidth" color="$churchColor" color_2="$attractionStrokeColor"/>
+					<apply strokeWidth_2="$attractionStrokeWidth" color="$churchColor"/>
 				</switch>
 				<switch>
 					<case tag="military" value="bunker"/>
@@ -9699,8 +9696,8 @@
 				<case minzoom="13" tag="tourism" value="attraction"/>
 				<case minzoom="16" tag="tourism" value="artwork"/>
 				<switch tag="amenity" value="place_of_worship">
-					<!-- <case minzoom="14" moreDetailed="true"/> issue #2 -->
-					<case minzoom="16" moreDetailed="false"/>
+					<case minzoom="14" moreDetailed="true"/>
+					<case minzoom="15" moreDetailed="false"/>
 					<apply>
 						<switch>
 							<case additional="ruins=yes"/>
@@ -9729,8 +9726,8 @@
 				</apply_if>
 			</case>
 			<switch>
-				<case minzoom="13" tag="leisure" value="stadium" color="$buildingEducationalColor"/>
-				<case minzoom="13" tag="leisure" value="sports_centre" color="$buildingEducationalColor"/>
+				<case minzoom="13" tag="leisure" value="stadium" color="$stadiumColor"/>
+				<case minzoom="13" tag="leisure" value="sports_centre" color="$sportsCentreColor"/>
 			</switch>
 			<switch minzoom="13">
 				<case tag="power" value="plant"/>
@@ -10108,15 +10105,15 @@
 			<case tag="lit" value="yes" color="$null" color_2="$litYesColor"/>
 			<case tag="lit" value="no" color="$null" color_2="$litNoColor"/>
 			<apply>
-				<case maxzoom="11" strokeWidth_2="4:4"/>
-				<case maxzoom="12" strokeWidth_2="5:5"/>
-				<case maxzoom="13" strokeWidth_2="7:7"/>
-				<case maxzoom="14" strokeWidth_2="10:10"/>
-				<case maxzoom="15" strokeWidth_2="13:13"/>
-				<case maxzoom="16" strokeWidth_2="16:16"/>
-				<case maxzoom="17" strokeWidth_2="25:25"/>
-				<case maxzoom="18" strokeWidth_2="34:34"/>
-				<case minzoom="19" strokeWidth_2="40:40"/>
+				<case maxzoom="11" strokeWidth="2:2"/>
+				<case maxzoom="12" strokeWidth="2.5:2.5"/>
+				<case maxzoom="13" strokeWidth="3.5:3.5"/>
+				<case maxzoom="14" strokeWidth="5:5"/>
+				<case maxzoom="15" strokeWidth="6.5:6.5"/>
+				<case maxzoom="16" strokeWidth="8:8"/>
+				<case maxzoom="17" strokeWidth="12.5:12.5"/>
+				<case maxzoom="18" strokeWidth="17:17"/>
+				<case minzoom="19" strokeWidth="20:20"/>
 			</apply>
 		</switch>
 		<case moreDetailed="true" minzoom="17" tag="building:part" value="" strokeWidth_2="0.5" color_2="#999999">
@@ -12221,7 +12218,7 @@
 		</switch>
 		<case minzoom="18" tag="attraction" value="log_flume" strokeWidth="0.1"/>
 
-		<case minzoom="11" tag="route" value="ferry" color="$routeFerryColor" strokeWidth="1:1" pathEffect="6_3">
+		<case minzoom="8" tag="route" value="ferry" color="$routeFerryColor" strokeWidth="1:1" pathEffect="6_3">
 			<apply_if minzoom="16"> <!-- for new OpenGL engine only -->
 				<apply_if additional="oneway=yes" pathIcon="oneway_blue" pathIconStep="70"/>
 				<apply_if additional="oneway=-1" pathIcon="oneway_reverse_blue" pathIconStep="70"/>
@@ -12590,15 +12587,15 @@
 					<case minzoom="17" pathEffect="29_16"/>
 				</case>
 				<apply>
-					<case maxzoom="11" strokeWidth="4:4"/>
-					<case maxzoom="12" strokeWidth="5:5"/>
-					<case maxzoom="13" strokeWidth="7:7"/>
-					<case maxzoom="14" strokeWidth="10:10"/>
-					<case maxzoom="15" strokeWidth="13:13"/>
-					<case maxzoom="16" strokeWidth="16:16"/>
-					<case maxzoom="17" strokeWidth="25:25"/>
-					<case maxzoom="18" strokeWidth="34:34"/>
-					<case minzoom="19" strokeWidth="40:40"/>
+					<case maxzoom="11" strokeWidth="2:2"/>
+					<case maxzoom="12" strokeWidth="2.5:2.5"/>
+					<case maxzoom="13" strokeWidth="3.5:3.5"/>
+					<case maxzoom="14" strokeWidth="5:5"/>
+					<case maxzoom="15" strokeWidth="6.5:6.5"/>
+					<case maxzoom="16" strokeWidth="8:8"/>
+					<case maxzoom="17" strokeWidth="12.5:12.5"/>
+					<case maxzoom="18" strokeWidth="17:17"/>
+					<case minzoom="19" strokeWidth="20:20"/>
 				</apply>
 			</switch>
 			<switch minzoom="17">
