@@ -37,3 +37,10 @@ If importing fails and returns and error, please [file an issue](https://github.
 ## License
 
 The files are licensed under GPLv3 like their originals taken from https://github.com/osmandapp/OsmAnd-resources/tree/master/rendering_styles
+
+## Other Styles I found online
+
+- Railway Style: https://github.com/fuzzysolutions/OsmAndRailwayStyles
+- Hiking: https://github.com/Hades1503/OsmAnd_Hiking_Map/blob/main/README-EN.md
+- 
+
