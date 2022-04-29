@@ -1899,7 +1899,7 @@
 
 	<renderingAttribute name="stadiumColor">
 		<case nightMode="true" attrColorValue="#04382c"/>
-		<case moreDetailed="true" attrColorValue="#defaultColor"/>
+		<case moreDetailed="true" attrColorValue="#8DE9A1"/>
 		<case attrColorValue="$defaultColor"/>
 	</renderingAttribute>
 	<renderingAttribute name="stadiumStrokeColor">
@@ -9278,7 +9278,7 @@
 					<case tag="building" value="basilica"/>
 					<case tag="building" value="castle_tower"/>
 					<case tag="historic" value="city_gate"/>
-					<apply strokeWidth_2="$attractionStrokeWidth" color="$churchColor"/>
+					<apply color="$churchColor"/>
 				</switch>
 				<switch>
 					<case tag="military" value="bunker"/>
