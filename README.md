@@ -31,6 +31,7 @@ The map styles (or rendering styles) are Extensible Markup Language (.xml) files
   - [x] narrower street lighting
   - [x] osmand default rendering style update compatible
   - if you want to use night mode, make background transparent, not green.
+  - results differ depending on the screen of the device.
 
 ![test](screenshots/UniMap.jpg)
 
