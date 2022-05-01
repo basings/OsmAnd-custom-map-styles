@@ -5,11 +5,35 @@
 	<renderingProperty attr="baseAppMode" name="Default Rendering mode" description="Map optimization for respective User Profile based on base (parent) profile"
 		type="string" possibleValues="default, car, bicycle, pedestrian, public_transport, boat, ski"/>
   <renderingProperty attr="backgroundColor" name="Background Color" description="Background Color"
-		type="string" possibleValues="Green,Transparent" defaultValueDescription="Green"/>
+		type="string" possibleValues="Green,Transparent"/>
 	<renderingProperty attr="roadStyle" name="Road style" description="Road style"
-		type="string" possibleValues="yellowRoads,germanRoadAtlas,americanRoadAtlas,highContrastRoads,boldOutline" defaultValueDescription="yellowRoads"/>
+		type="string" possibleValues="yellowRoads,germanRoadAtlas,americanRoadAtlas,highContrastRoads,boldOutline" defaultValueDescription="default"/>
 
   <renderingConstant name="null" value="#00000000"/>
+
+	<renderingConstant name="otherAmenitiesTextColorDay" value="#444444"/>
+	<renderingConstant name="otherAmenitiesTextHaloColorDay" value="#f1eae4"/>
+	<renderingConstant name="buildingTextHaloRadiusDay" value="1"/>
+	<renderingAttribute name="buildingTextHaloColor">
+		<case nightMode="true" attrColorValue="#90142529"/>
+		<case attrColorValue="#ddebe7e4"/>
+	</renderingAttribute>
+	<renderingAttribute name="buildingTextColor">
+		<case nightMode="true" attrColorValue="#7a9399"/>
+		<case attrColorValue="#404040"/>
+	</renderingAttribute>
+
+	<renderingAttribute name="placeStateProvinceTextColor">
+		<case attrColorValue="#505050">
+			<apply_if nightMode="true" attrColorValue="#cccccccc"/>
+		</case>
+	</renderingAttribute>
+	<renderingConstant name="textHaloRadius" value="1"/>
+	<renderingAttribute name="placeStateProvinceTextHaloColor">
+		<case attrColorValue="#eeebe7e4">
+			<apply_if nightMode="true" attrColorValue="#bb002a2a"/>
+		</case>
+	</renderingAttribute>
 
   <renderingAttribute name="defaultColor">
 		<case backgroundColor="Green" attrColorValue="#E3EDCB"/>
@@ -233,5 +257,167 @@
 	</renderingAttribute>
 
 
+	<!-- Buildings -->
+	<text>
+		<switch>
+			<switch minzoom="5" textSize="25" textColor="$placeStateProvinceTextColor" textHaloRadius="$textHaloRadius" textHaloColor="$placeStateProvinceTextHaloColor">
+				<switch tag="place" value="region">
+					<!-- <case maxzoom="5" nameTag="ref" textOrder="25"/>-->
+					<case minzoom="6" nameTag="" textOrder="33"/>
+				</switch>
+				<apply textItalic="true" textWrapWidth="15"/>
+			</switch>
+
+			<switch textHaloRadius="$buildingTextHaloRadiusDay">
+				<switch minzoom="16">
+					<switch>
+						<case tag="military" value="barracks"/>
+						<case tag="military" value="bunker"/>
+						<case tag="abandoned:building" value=""/>
+						<case tag="disused:building" value=""/>
+						<case hideHouseNumbers="true" tag="building" value="" nameTag=""/>
+						<case tag="building" value="" nameTag="" nameTag2="addr:housenumber"/>
+						<case hideHouseNumbers="true" tag="building" value="" nameTag="addr:housename"/>
+						<case tag="building" value="" nameTag="addr:housename" nameTag2=""/>
+						<apply textSize="12"/>
+					</switch>
+					<switch>
+						<case hideHouseNumbers="false" tag="building" value="" nameTag="addr:housenumber" nameTag2="addr:housename"/>
+						<case hideHouseNumbers="false" tag="building" value="" nameTag="addr:housenumber" />
+						<!-- <apply_if maxzoom="17" textSize="13"/> -->
+						<apply_if maxzoom="17" textSize="0"/>
+						<apply_if minzoom="18" textSize="15"/>
+					</switch>
+					<apply textMinDistance="40" intersectionMargin="20" textColor="$buildingTextColor" textHaloColor="$buildingTextHaloColor" textWrapWidth="20" textOrder="135"/>
+				</switch>
+				<switch minzoom="18">
+					<case tag="building:part" value="" nameTag=""/>
+					<!-- <apply_if maxzoom="17" textSize="12" textMinDistance="40" intersectionMargin="20"/> -->
+					<apply_if minzoom="18" textSize="14"/>
+					<apply textColor="$buildingTextColor" textHaloColor="$buildingTextHaloColor" textWrapWidth="20" textOrder="137"/>
+				</switch>
+				<switch>
+					<case hideHouseNumbers="false" minzoom="18" tag="addr:housenumber" value="" nameTag="" nameTag2="addr:housenumber"/>
+					<case minzoom="18" tag="addr:housenumber" value="" nameTag=""/>
+					<case hideHouseNumbers="true" minzoom="16" tag="addr:housenumber" value="" nameTag="addr:housename"/>
+					<case hideHouseNumbers="false" minzoom="18" tag="addr:housenumber" value="" nameTag="addr:housenumber" nameTag2="addr:housename"/>
+					<case hideHouseNumbers="false" minzoom="18" tag="addr:housenumber" value="" nameTag="addr:housenumber"/>
+					<case minzoom="18" tag="addr:housename" value=""/>
+					<apply_if engine_v1="false">
+						<!-- <case maxzoom="16" textSize="13" intersectionMargin="20">
+							<apply_if baseAppMode="car" intersectionMargin="30"/>
+						</case>
+						<case maxzoom="17" textSize="14" intersectionMargin="20"/> -->
+						<case minzoom="18" textSize="15" intersectionMargin="20"/>
+					</apply_if>
+					<apply_if engine_v1="true" intersectionMargin="5">
+						<!-- <case maxzoom="16" textSize="13"/>
+						<case maxzoom="17" textSize="14"/> -->
+						<case minzoom="18" textSize="15"/>
+					</apply_if>
+					<apply_if engine_v1="true" textDy="8"/>
+					<apply textColor="$buildingTextColor" textHaloColor="$buildingTextHaloColor" textWrapWidth="25" textOrder="136"/>
+				</switch>
+				<switch>
+					<!-- <case minzoom="18" tag="addr:flats" value="" textWrapWidth="20" textOrder="137" textColor="#555555"> -->
+					<case minzoom="18" tag="addr:flats" value="" textWrapWidth="20" textOrder="137" textColor="#555555">
+						<case maxzoom="18" nameTag="ref" textSize="12"/>
+						<switch minzoom="19" textSize="13">
+							<case nameTag="ref" nameTag2="addr:flats"/>
+							<case nameTag="addr:flats"/>
+						</switch>
+						<apply_if engine_v1="true" textDy="7"/>
+					</case>
+					<switch minzoom="18">
+						<case maxzoom="18" tag="entrance" value="" nameTag="ref"/>
+						<case hideHouseNumbers="false" tag="entrance" value="" nameTag="addr:housenumber"/>
+						<case minzoom="19" tag="entrance" value="" nameTag="ref" nameTag2="addr:flats"/>
+						<case minzoom="19" tag="entrance" value="" nameTag="addr:flats"/>
+						<case minzoom="19" tag="entrance" value="" nameTag="" nameTag2="ref"/>
+						<case tag="highway" value="elevator" textOnPath="true"/>
+						<apply textSize="12" textColor="#555555" textWrapWidth="15"/>
+						<apply textOrder="161"/>
+					</switch>
+					<apply textHaloColor="#ddffffff">
+						<apply_if nightMode="true" textColor="#ffffff" textHaloColor="#77444444"/>
+					</apply>
+				</switch>
+				<!--	<apply textOrder="111"/>-->
+				<apply_if legend="true" textWrapWidth="50"/>
+			</switch>
+		</switch>
+	</text>
+
+	<polygon>
+		<switch streetLighting="true" minzoom="10" cap_2="ROUND">
+			<case tag="lit" value="yes" color="$null" color_2="$litYesColor"/>
+			<case tag="lit" value="no" color="$null" color_2="$litNoColor"/>
+			<apply>
+				<case maxzoom="11" strokeWidth="2:2"/>
+				<case maxzoom="12" strokeWidth="2.5:2.5"/>
+				<case maxzoom="13" strokeWidth="3.5:3.5"/>
+				<case maxzoom="14" strokeWidth="5:5"/>
+				<case maxzoom="15" strokeWidth="6.5:6.5"/>
+				<case maxzoom="16" strokeWidth="8:8"/>
+				<case maxzoom="17" strokeWidth="12.5:12.5"/>
+				<case maxzoom="18" strokeWidth="17:17"/>
+				<case minzoom="19" strokeWidth="20:20"/>
+			</apply>
+		</switch>
+	</polygon>
+
+	<line>
+		<switch streetLighting="true" minzoom="10" cap="ROUND">
+			<switch>
+				<case tag="lit" value="yes" color="$litYesColor"/>
+				<case tag="lit" value="no" color="$litNoColor"/>
+				<case tag="lit" value="interval" color="$litYesColor" cap="BUTT">
+					<case maxzoom="12" pathEffect="8_6"/>
+					<case maxzoom="14" pathEffect="12_8"/>
+					<case maxzoom="16" pathEffect="19_12"/>
+					<case minzoom="17" pathEffect="29_16"/>
+				</case>
+				<apply>
+					<case maxzoom="11" strokeWidth="2:2"/>
+					<case maxzoom="12" strokeWidth="2.5:2.5"/>
+					<case maxzoom="13" strokeWidth="3.5:3.5"/>
+					<case maxzoom="14" strokeWidth="5:5"/>
+					<case maxzoom="15" strokeWidth="6.5:6.5"/>
+					<case maxzoom="16" strokeWidth="8:8"/>
+					<case maxzoom="17" strokeWidth="12.5:12.5"/>
+					<case maxzoom="18" strokeWidth="17:17"/>
+					<case minzoom="19" strokeWidth="20:20"/>
+				</apply>
+			</switch>
+			<switch minzoom="17">
+				<case tag="lit_pedestrian_layer-1" value="interval" color="$litYesColor" pathEffect="6_3"/>
+				<case tag="lit_pedestrian_layer-1" value="yes" color="$litYesColor" pathEffect="15_7"/>
+				<case tag="lit_pedestrian_layer-1" value="no" color="$litNoColor" pathEffect="15_7"/>
+				<apply cap="BUTT" strokeWidth="9:9"/>
+			</switch>
+		</switch>
+	</line>
+
+<polygon>
+	<switch>
+		<case minzoom="13" tag="tourism" value="attraction"/>
+		<case minzoom="16" tag="tourism" value="artwork"/>
+		<switch tag="amenity" value="place_of_worship">
+			<case minzoom="16" moreDetailed="true"/>
+			<case minzoom="16" moreDetailed="false"/>
+			<apply>
+				<switch>
+					<case additional="ruins=yes"/>
+					<case additional="abandoned=yes"/>
+					<apply>
+						<!-- <apply_if maxzoom="15" pathEffect_2="4_2"/> -->
+						<apply_if nightMode="true"/>
+					</apply>
+					<apply_if minzoom="16" pathEffect_2="9_3"/>
+				</switch>
+			</apply>
+		</switch>
+	</switch>
+</polygon>
 
 </renderingStyle>
