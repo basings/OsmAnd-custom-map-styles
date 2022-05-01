@@ -26,11 +26,11 @@ The map styles (or rendering styles) are Extensible Markup Language (.xml) files
   - [x] lighter green for forests
   - [x] lighter blue for water
   - [x] yellowish major roads, white medium roads and gray service roads
-  - [ ] no random house numbers at zoom level 16 and 17
-  - [ ] narrower street lighting
-  - [ ] reduced importance of churches, camping sites
-  - [ ] more area detail on lower zoom levels but increased rendering time
-  - [ ] larger text size for regions
+  - [x] larger text size for regions
+  - [x] no random house numbers at zoom level 16 and 17
+  - [x] narrower street lighting
+  - [x] osmand default rendering style update compatible
+  - if you want to use night mode, make background transparent, not green.
 
 ![test](screenshots/UniMap.jpg)
 
