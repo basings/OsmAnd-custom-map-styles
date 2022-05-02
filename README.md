@@ -22,7 +22,7 @@ The map styles (or rendering styles) are Extensible Markup Language (.xml) files
 - Description: Beautiful map colors without pop and too many colors.
 - Mode: all-rounder. It can be used for any mode (car, bike, foot, ...).
 - Notes:
-  - [x] greenish background color (same as farmland)
+  - [x] greenish background color (same as farmland). Needs to be enabled in map rendering settings.
   - [x] lighter green for forests
   - [x] lighter blue for water
   - [x] yellowish major roads, white medium roads and gray service roads
