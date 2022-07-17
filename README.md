@@ -25,11 +25,11 @@ The map styles (or rendering styles) are Extensible Markup Language (.xml) files
   - [x] greenish background color (same as farmland). Needs to be enabled in map rendering settings.
   - [x] lighter green for forests
   - [x] lighter blue for water
-  - [x] yellowish major roads, white medium roads and gray service roads
-  - [x] larger text size for regions
+  - [x] yellowish major roads, white medium roads and gray service roads. Needs to be enaled in map rendering settings with "yellowRoads".
   - [x] no random house numbers at zoom level 16 and 17
   - [x] narrower street lighting
   - [x] osmand default rendering style update compatible
+  - [x] gray borders
   - if you want to use night mode, make background transparent, not green.
   - results differ depending on the screen of the device.
 

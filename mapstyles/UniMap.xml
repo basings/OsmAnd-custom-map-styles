@@ -4,7 +4,7 @@
 		type="string" possibleValues="browse map,car,bicycle,pedestrian"/>
 	<renderingProperty attr="baseAppMode" name="Default Rendering mode" description="Map optimization for respective User Profile based on base (parent) profile"
 		type="string" possibleValues="default, car, bicycle, pedestrian, public_transport, boat, ski"/>
-  <renderingProperty attr="backgroundColor" name="Background Color" description="Background Color"
+	<renderingProperty attr="backgroundColor" name="Background Color" description="Background Color"
 		type="string" possibleValues="Green,Transparent"/>
 	<renderingProperty attr="roadStyle" name="Road style" description="Road style"
 		type="string" possibleValues="yellowRoads,germanRoadAtlas,americanRoadAtlas,highContrastRoads,boldOutline" defaultValueDescription="default"/>
@@ -40,6 +40,16 @@
 		<case attrColorValue="#ebe7e4">
 			<apply_if nightMode="true" attrColorValue="#121926"/>
 		</case>
+	</renderingAttribute>
+
+	<!-- boundary color -->
+	<renderingAttribute name="boundaryColorInner">
+		<case nightMode="true" attrColorValue="#44b27db3"/>
+		<case attrColorValue="#508e8e8e"/>
+	</renderingAttribute>
+	<renderingAttribute name="boundaryColorOuter">
+		<case nightMode="true" attrColorValue="#55803b80"/>
+		<case attrColorValue="#308e8e8e"/>
 	</renderingAttribute>
 
 	<renderingAttribute name="farmColor">
@@ -260,14 +270,6 @@
 	<!-- Buildings -->
 	<text>
 		<switch>
-			<switch minzoom="5" textSize="25" textColor="$placeStateProvinceTextColor" textHaloRadius="$textHaloRadius" textHaloColor="$placeStateProvinceTextHaloColor">
-				<switch tag="place" value="region">
-					<!-- <case maxzoom="5" nameTag="ref" textOrder="25"/>-->
-					<case minzoom="6" nameTag="" textOrder="33"/>
-				</switch>
-				<apply textItalic="true" textWrapWidth="15"/>
-			</switch>
-
 			<switch textHaloRadius="$buildingTextHaloRadiusDay">
 				<switch minzoom="16">
 					<switch>
@@ -419,5 +421,11 @@
 		</switch>
 	</switch>
 </polygon>
+
+
+
+
+
+
 
 </renderingStyle>
