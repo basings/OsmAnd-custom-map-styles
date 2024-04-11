@@ -16,6 +16,20 @@ The map styles (or rendering styles) are Extensible Markup Language (.xml) files
 
 <a href="https://raw.githubusercontent.com/basings/OsmAnd-custom-map-styles/main/UniMap.xml" download="UniMap.xml">Download UniMap.xml</a>
 
+<script>
+    var downloadLink = document.getElementById('downloadLink');
+
+    downloadLink.addEventListener('click', function(event) {
+        event.preventDefault();
+        var tempAnchor = document.createElement('a');
+        tempAnchor.setAttribute('href', '[https://raw.githubusercontent.com/test/test/main/test.xml](https://raw.githubusercontent.com/basings/OsmAnd-custom-map-styles/main/UniMap.xml)');
+        tempAnchor.setAttribute('download', 'UniMap.xml');
+        document.body.appendChild(tempAnchor);
+        tempAnchor.click();
+        document.body.removeChild(tempAnchor);
+    });
+</script>
+
 ## Map Styles
 
 ### UniMap
