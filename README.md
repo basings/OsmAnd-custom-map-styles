@@ -14,7 +14,7 @@ The map styles (or rendering styles) are Extensible Markup Language (.xml) files
   2. Select "Configure map"
   3. Select "Map Style" in the category "Map rendering"
 
-<a href="https://github.com/basings/OsmAnd-custom-map-styles/blob/main/UniMap.xml" download="UniMap.xml">Download UniMap.xml</a>
+<a href="https://raw.githubusercontent.com/basings/OsmAnd-custom-map-styles/main/UniMap.xml" download="UniMap.xml">Download UniMap.xml</a>
 
 ## Map Styles
 
