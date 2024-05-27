@@ -52,5 +52,4 @@ The files are licensed under GPLv3 like their originals taken from https://githu
 ## Other Styles I found online
 
 - Railway Style: https://github.com/fuzzysolutions/OsmAndRailwayStyles
-- Hiking: https://github.com/Hades1503/OsmAnd_Hiking_Map
-- Cycling: https://github.com/Hades1503/OsmAnd_Cycling_Map
+- https://github.com/OsmAnd-Rendering/
