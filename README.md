@@ -16,6 +16,8 @@ The map styles (or rendering styles) are Extensible Markup Language (.xml) files
 
 You can download the file by > right click [UniMap.xml](https://raw.githubusercontent.com/basings/OsmAnd-custom-map-styles/main/UniMap.xml) > Save Link as... > Done
 
+In case "open with" does not show osmand, try another file browser. GrapheneOS's Files for example can't open it (anymore) yet Material Files can open an xml file with osmand.
+
 ## Map Styles
 
 ### UniMap
